@@ -1,0 +1,137 @@
+// Main
+// -------------------------
+
+.hero{ background-color: $brandLightBlue; padding: 30px 0; 
+	.hero-content{ height: 100vh; }
+}
+
+.logo{ background: url(../img/drop-logo.svg) no-repeat center center; background-size: contain;
+	position: relative; display: block; width: 250px; height: 103px; margin: auto; opacity: 0;
+	@include breakFirst($screen-md){ width: 350px; height: 144px; }
+}
+
+.tagline{ color: $brandBlue; font-family: 'proxima-nova'; letter-spacing: 0; font-size: 20px; font-weight: 400; 
+	span{ width: 129px; height: 27px; background: url(../img/vivex-logo.svg) no-repeat center center; position: relative;
+		background-size: cover; display: inline-block; top: 5px;
+		
+	}
+}  
+
+a.typeform-share{ float: none !important; margin: auto !important; text-align: center !important; max-width: 280px !important; 
+	margin-top: 20px !important; background: transparent !important; padding: 15px 30px !important; border: 2px solid $brandDarkBlue !important;
+	letter-spacing: 0 !important; font-family: 'proxima-nova' !important; color: $brandDarkBlue !important; font-size: 16px !important;
+	&:hover{ background-color: $brandDarkBlue !important; color: $white !important; }
+}
+.main-content{ background-color: $brandBlue; padding: 30px 15px 0 15px; 
+	.main-content-wrap{ padding: 60px 15px; position: relative; background-color: $white; position: relative;
+		top: -100px;
+	}
+	h1{  color: $brandBlue; font-family: 'proxima-nova'; letter-spacing: 0; font-weight: 300; text-transform: capitalize;
+		font-size: 24px;
+		@include breakFirst($screen-md){ font-size: 34px; }
+	}
+}
+
+.intro{ padding: 30px 0; margin-bottom: 30px;
+	p{ font-size: 22px; font-family: 'proxima-nova'; color: $brandBlue; display: block; margin: auto; max-width: 800px; 
+		letter-spacing: 0; line-height: 1.6; font-weight: 400;
+		span{ border-bottom: 3px solid $middleBlue; }
+		@include breakFirst($screen-md){ font-size: 30px; }
+	}
+}
+
+.section-title{ 
+	@include breakFirst($screen-md){ height: 180px; }
+}
+
+.about-team{ padding: 15px;
+	@include breakFirst($screen-md){ padding: 30px 15px;}
+	h1{
+		&:before{ content: ''; display: block; width: 87px; height: 52px; margin: auto; position: relative;
+			background: url(../img/team-icon.svg) no-repeat center center; background-size: cover;
+		}
+	}
+	p{ font-size: 18px; letter-spacing: 0; font-family: 'proxima-nova'; color: $brandBlue; line-height: 1.6; 
+		text-align: center;
+		@include breakFirst($screen-md){ font-size: 20px; text-align: left; }
+	}
+
+}
+
+
+
+.our-team h1{
+	&:before{ content: ''; display: block; width: 87px; height: 52px; margin: auto; position: relative;
+		background: url(../img/team-icon.svg) no-repeat center center; background-size: cover;
+	}
+}
+
+.team-members{ padding: 30px 0; display: none;
+	.team-member{ position: relative; margin-bottom: 30px;
+		.member-img{ width: 120px; height: 120px; background: url(http://placehold.it/150) no-repeat center center;
+			background-size: cover; margin: auto; margin-bottom: 15px; border-radius: 100%;
+			
+		}
+		&:nth-child(1) .member-img{ background: url(../img/russ.jpg) no-repeat center center; background-size: cover; }
+		&:nth-child(2) .member-img{ background: url(../img/ryuka.jpg) no-repeat center center; background-size: cover; }
+		&:nth-child(3) .member-img{ background: url(../img/geoff.jpg) no-repeat center center; background-size: cover; }
+		&:nth-child(4) .member-img{ background: url(../img/jason.jpg) no-repeat center center; background-size: cover; }
+		&:nth-child(5) .member-img{ background: url(../img/tjp.jpg) no-repeat -12px -15px; background-size: 110%; }
+		&:nth-child(6) .member-img{ background: url(../img/jacob.jpg) no-repeat center center; background-size: cover; }
+		span{ text-transform: capitalize; font-family: 'proxima-nova'; letter-spacing: 0; font-size: 16px; 
+			line-height: 1.6; margin-bottom: 0;
+			&.member-name{ color: $brandBlue; }
+			&.member-title{ color: #555; }
+		}
+	}
+
+}
+
+.press, .investors{ padding: 30px 0; }
+
+
+.press-link, .investor-link{ margin-bottom: 30px;
+	&:last-child{margin-bottom: 0;}
+	@include breakFirst($screen-md){ margin-bottom: 0; }
+	a{  display: block; height: 50px; background: url(http://placehold.it/300x200.jpg) no-repeat center center;
+		background-size: contain; width: 100%; margin: auto;
+	}
+}
+
+.investor-link{
+	a{ background: url(../img/htc-logo.png) no-repeat center center; background-size: contain;} 
+	&:nth-child(2) a{ background: url(../img/autochrome.png) no-repeat center center; background-size: contain; }
+	&:nth-child(4) a{ background: url(../img/backstage.png) no-repeat center center; background-size: contain; }
+}
+.press-link a:first-child{
+	background: url(../img/tech-crunch-logo.png) no-repeat center center; background-size: contain;
+	height: 100px;
+}
+.press-link:last-child a{
+	background: url(../img/venture-beat-logo.png) no-repeat center center; background-size: contain;
+	height: 100px;
+}
+
+.contact{ color: $white; background-color: $brandBlue; padding: 0 15px 30px 15px;
+	h1{ font-family: 'proxima-nova'; text-transform: none; font-weight: 300; letter-spacing: 0;
+		color: $white; 
+	}
+
+}
+
+.contact-content{ padding: 30px 0; 
+	.contact-bucket{ margin-bottom: 30px; }
+	h3{ text-transform: capitalize; font-weight: 400; letter-spacing: 0; }
+	a{ font-family: 'proxima-nova'; letter-spacing: 0; color: $white; line-height: 1.6; font-size: 15px; 
+		display: block; margin: 0;
+		&:hover{ color: $brandLightBlue; }
+	}
+}
+
+
+
+
+
+.footer{ background-color: $brandDarkBlue; padding: 30px 0;  
+	.footer-content{ color: $white; font-size: 14px; text-transform: capitalize; font-family: 'proxima-nova'; letter-spacing: 0; }
+}
