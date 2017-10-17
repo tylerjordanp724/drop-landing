@@ -37,7 +37,7 @@
 </head>
 <body>
 	<div id="page" class="site">
-		<div class="hero">
+		<div class="hero" data-vide-bg="img/drop-video" data-vide-options="loop: true, muted: true, position: 0% 0%">
 			<div class="hero-content container">
 				<div class="center">
 					<div class="vert-center">
